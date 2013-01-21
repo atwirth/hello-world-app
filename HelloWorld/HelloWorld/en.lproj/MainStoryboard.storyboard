@@ -17,9 +17,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyK-BW-8rB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyK-BW-8rB" userLabel="Hello">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" type="user" id="bg6-Pg-Edj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Hello">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,7 +30,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeGreeting:" destination="2" eventType="touchUpInside" id="zSY-iw-Yh5"/>
+                                    <action selector="changeGreeting:" destination="2" eventType="touchUpInside" id="IYf-BO-UJC"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-kO-J9u">
@@ -42,12 +45,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ixp-kt-KGn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="233" id="APy-ke-vEc"/>
+                            <constraint firstAttribute="bottom" secondItem="HyK-BW-8rB" secondAttribute="bottom" constant="93" id="I3F-jr-jgr"/>
                             <constraint firstAttribute="trailing" secondItem="ixp-kt-KGn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ox2-EE-CWm"/>
                             <constraint firstItem="sGj-kO-J9u" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QYf-DV-rN8"/>
-                            <constraint firstItem="HyK-BW-8rB" firstAttribute="centerX" secondItem="ixp-kt-KGn" secondAttribute="centerX" type="default" id="aRy-QX-lcw"/>
-                            <constraint firstAttribute="bottom" secondItem="HyK-BW-8rB" secondAttribute="bottom" constant="93" id="mxj-wA-a6R"/>
                             <constraint firstItem="sGj-kO-J9u" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ngm-CO-DRT"/>
                             <constraint firstItem="ixp-kt-KGn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="otM-mY-uve"/>
+                            <constraint firstItem="HyK-BW-8rB" firstAttribute="centerX" secondItem="ixp-kt-KGn" secondAttribute="centerX" type="default" id="t1A-1a-XaL"/>
                             <constraint firstAttribute="trailing" secondItem="sGj-kO-J9u" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zHD-CN-GEA"/>
                         </constraints>
                     </view>
